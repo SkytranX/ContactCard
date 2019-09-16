@@ -20,7 +20,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:background="@color/white"
         android:orientation="horizontal"
         android:weightSum="5">
@@ -38,9 +38,10 @@
 
                 <ImageView
                     android:id="@+id/ProfileImage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
                     android:layout_centerVertical="true"
+                    android:contentDescription="profile_image"
                     app:srcCompat="@drawable/pimage" />
             </RelativeLayout>
 
@@ -59,26 +60,28 @@
 
                 <TextView
                     android:id="@+id/Name"
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/JobTitle"
                     android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
                     android:paddingLeft="25dp"
                     android:text="Steven John Tran"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/JobTitle"
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@id/Line"
                     android:layout_centerHorizontal="true"
                     android:paddingLeft="25dp"
+                    android:layout_alignParentLeft="true"
                     android:text="Android Consultant"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:paddingBottom="5dp"/>
 
@@ -97,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/Number"
                     android:paddingLeft="25dp"
-                    android:text="Email: StevenSkyTran@Gmail.com"
+                    android:text="Email: Stevenskytran@Gmail.com"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -125,6 +128,18 @@
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="39dp"
+                    android:layout_height="36dp"
+                    android:layout_above="@id/Line"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="9dp"
+                    android:contentDescription="qrc"
+                    app:srcCompat="@drawable/qrc" />
 
             </RelativeLayout>
 
