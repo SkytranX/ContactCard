@@ -2,9 +2,10 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue_grey_900"
+    android:orientation="vertical"
     android:weightSum="7">
 
 
@@ -15,117 +16,122 @@
         android:orientation="horizontal">
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:orientation="horizontal"
+        android:layout_weight="2"
         android:background="@color/white"
+        android:orientation="horizontal"
         android:weightSum="5">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="2"
             android:background="@color/white"
-            android:paddingLeft="25dp">
+            android:orientation="vertical">
+
             <RelativeLayout
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:id="@+id/ProfileImage"
                     android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    app:srcCompat="@drawable/pimage"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:background="@color/orange_500"
-                    />
-
-
+                    app:srcCompat="@drawable/pimage" />
             </RelativeLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="3">
+            android:layout_weight="3"
+            android:orientation="vertical">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                >
+                android:background="@color/blue_grey_500">
+
                 <TextView
                     android:id="@+id/Name"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Steven John Tran"
-                    android:textSize="12sp"
-                    android:paddingLeft="25dp"
-                    android:textStyle="bold"
                     android:layout_above="@+id/JobTitle"
-                    android:layout_centerHorizontal="true"/>
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="25dp"
+                    android:text="Steven John Tran"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/JobTitle"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Android Consultant"
-                    android:textSize="12sp"
-                    android:paddingLeft="25dp"
-                    android:textStyle="bold"
                     android:layout_above="@id/Line"
-                    android:layout_centerHorizontal="true"/>
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="25dp"
+                    android:text="Android Consultant"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dp"/>
+
                 <TextView
                     android:id="@+id/Line"
-                    android:layout_width="200dp"
-                    android:layout_height="5dp"
-                    android:textSize="12sp"
-                    android:paddingLeft="25dp"
-                    android:textStyle="bold"
+                    android:layout_width="185dp"
+                    android:layout_height="2dp"
                     android:layout_above="@id/Number"
-                    android:layout_centerHorizontal="true"
-                    android:background="@color/orange_500"/>
+                    android:background="@color/white"
+                    android:paddingLeft="25dp"
+                    android:layout_centerHorizontal="true"/>
 
                 <TextView
                     android:id="@+id/Email"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Email: StevenSkyTran@Gmail.com"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:paddingLeft="25dp"
                     android:layout_below="@+id/Number"
-                    />
-
+                    android:paddingLeft="25dp"
+                    android:text="Email: StevenSkyTran@Gmail.com"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/Number"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Number"
-                    android:text="Phone: +1(714)618-0207"
-                    android:textSize="12sp"
-                    android:paddingLeft="25dp"
-                    android:textStyle="bold"
-                    android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
-                    />
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="5dp"
+                    android:text="Phone: +1(714)618-0207"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/Instagram"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/Email"
                     android:paddingLeft="25dp"
                     android:text="Instagram: Skytran"
+                    android:textColor="@color/white"
                     android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:layout_below="@id/Email"
-                    />
-
-
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -133,7 +139,6 @@
         android:orientation="horizontal">
 
     </LinearLayout>
-
 
 
 </LinearLayout>
