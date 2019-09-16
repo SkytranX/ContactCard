@@ -20,7 +20,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="2.4"
         android:background="@color/white"
         android:orientation="horizontal"
         android:weightSum="5">
@@ -87,11 +87,10 @@
 
                 <TextView
                     android:id="@+id/Line"
-                    android:layout_width="185dp"
+                    android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_above="@id/Number"
                     android:background="@color/white"
-                    android:paddingLeft="25dp"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
@@ -100,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/Number"
                     android:paddingLeft="25dp"
-                    android:text="Email: Stevenskytran@Gmail.com"
+                    android:text="Email: Email_Android@Gmail.com"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -113,7 +112,7 @@
                     android:layout_centerVertical="true"
                     android:paddingLeft="25dp"
                     android:paddingTop="5dp"
-                    android:text="Phone: +1(714)618-0207"
+                    android:text="Phone: +1(234)567-8912"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -124,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/Email"
                     android:paddingLeft="25dp"
-                    android:text="Instagram: Skytran"
+                    android:text="Instagram: AndroidT"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
